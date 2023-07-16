@@ -4,6 +4,17 @@
     padding: 0;
     font-family:Roboto, arial, helvetica, sans-serif;
 }
+h1 ul {
+    margin: 0px;
+}
+ a {
+    text-decoration: none;
+    color: inherit;
+ }
+img{
+    max-width: 100%;
+    display: block; 
+}
 
 body{
     background-color:#000;
@@ -83,9 +94,50 @@ nav a:hover:after {
     color:#fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-areas: 1, 1fr; */
+    gap: 0px 40px;
     align-items: center;
 }
-.imgBike {
-    width: 100%;
+/* comentado pelo motivo que coloquei uma div no html para segurar  o h1 p e o botão */
+ /* .descri p,
+.descri a{
+    grid-column: 1;
+ }
+
+  .descri img {
+      grid-column: 2;
+      grid-row: 1/3;
+  }
+/* Deixando a imagem sozinha do lado direto  */
+.descri h1{
+    margin-bottom:32px;
+    font-size: 64px;
+    line-height:1.125;
+    text-align: right;
 }
+
+.descri p{
+    margin-bottom:40px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #b2b2b2;
+    text-align: right;
+}
+
+.conteudo{
+    align-self: end;
+    padding-bottom: 80px;
+}
+.conteudo a{
+    padding: 10px 30px;
+    background-color: #FFBF00;
+    color: #241c04;
+    border-radius:8px;
+    margin: 0px 35px;
+    text-transform: uppercase;
+    font-weight:700
+}
+.conteudo a:hover{
+    background-color: #533e01;
+    color:#ffffff;
+}
+
