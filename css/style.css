@@ -1,3 +1,4 @@
+@import url(responsivo.css);
 *{
     margin: 0;
     padding: 0;
@@ -7,30 +8,38 @@
 body{
     background-color:#000;
 }
+.header-bg{
+    background-color:#080707;
+}
 
-nav{
+.header{
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
-    padding:0px 80px;
-    background-color: #080707;
-    height: 3.75rem;
-    margin-bottom:120px;
+    /* height: 3.75rem; */
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
 }
 
 nav ul{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    /* gap:40px ; */
+    gap:40px;
 }
 
 nav ul li{
     position: relative;
     cursor: pointer;
-    padding-left: 30px;
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-size:  16px;
+    
     line-height: normal;
 
 }
@@ -38,19 +47,35 @@ nav ul li{
 nav a {
     text-decoration:none;
     color:#fff;
+    font-size: 16px;
+    position: relative;
+}
+
+nav a::after{
+    position: absolute;
+    content: " ";
+    display: block;
+    height:2px;
+    width:0;
+    background-color: #FFBF00;
+    margin-top: 4px;
+    transition: 0.5s;
 }
 .active{
     /* 6e6464 */
-    /* color: #000; */
-    background-color: #3f3c3c;
-    padding: 8px 16px;
-    border-radius:8px;
+    /* background-color: #1b1b1a;
+    padding: 10px 16px;
+    border-radius:8px; */
+
 }
-nav a:hover {
-    background-color: #ffd502;
-    padding: 10px 20px;
+nav a:hover:after {
+    /* ffd502 */
+    /* background-color: #FFBF00;
+    padding: 10px 16px;
     border-radius: 8px;
     color: #000;
+    font-weight: bold; */
+    width: 100%;
 }
 
 /* descrição main */
@@ -62,5 +87,5 @@ nav a:hover {
     align-items: center;
 }
 .imgBike {
-    width:500px;
+    width: 100%;
 }
