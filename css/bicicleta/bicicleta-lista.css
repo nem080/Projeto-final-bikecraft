@@ -1,10 +1,10 @@
 .bicicletas-lista {
     padding-top: 40px;
-    padding-bottom:60px;
+    padding-bottom:20px;
 }
 
 .bicicletas-lista h2 {
-    margin-bottom: 40px;
+    margin:20px 0px 40px 0;
 }
 .bicicletas-lista a{
     display: block;

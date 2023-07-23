@@ -1,0 +1,22 @@
+.relato-bg{
+    background-color: var(--cor-p5);
+}
+.relato-conteudo{
+    display: flex;
+    gap: 101px;
+    padding: 20px 101px 20px 10px;
+}
+
+.relato-conteudo h3{
+    text-transform:capitalize;
+    padding:50px 0px 32px 50px;
+}
+.relato-conteudo p{
+    padding:10px 0px 60px 0px;
+    text-transform: capitalize;
+}
+#pessoa-relato{
+    margin:60px 0px 0px 0px;
+    align-self:start;
+    text-transform: capitalize;
+}
