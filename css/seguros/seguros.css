@@ -1,0 +1,123 @@
+.seguro-bg {
+    background-color: var(--cor-11);
+}
+
+.seguro-corpo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.conteiner h2 {
+    grid-column: 1/4;
+    padding: 40px 0 120px 0;
+    grid-auto-columns: 0 auto;
+}
+
+.prata {
+    background-color: rgb(36, 36, 36);
+    padding: 20px;
+    border-radius: 13px;
+    max-width: 400px;
+    margin-bottom: 60px;
+    margin-left: 70px;
+}
+
+.prata ul li {
+    display: flex;
+    padding-bottom: 10px;
+    gap:8px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.ouro {
+    background-color: rgb(36, 36, 36);
+    padding: 20px;
+    border-radius: 13px;
+    max-width: 400px;
+    margin-bottom: 60px;
+    margin-left: 80px;
+}
+
+.ouro ul li {
+    display: flex;
+    padding-bottom: 10px;
+    gap: 8px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.preco-ouro-prata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.preco-ouro-prata h4 {
+    color: var(--c-6, #9C9C9C);
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 47px;
+    /* 130.556% */
+    text-transform: uppercase;
+}
+
+.preco-ouro-prata p {
+    text-align: right;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 47px;
+    /* 130.556% */
+    text-transform: capitalize;
+}
+
+.preco-ouro-prata span {
+    grid-column: 2;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    text-align: right;
+    color: var(--c-6, #9C9C9C);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 175% */
+    text-transform: capitalize;
+}
+
+.btn-escuro {
+    display: inline-block;
+    background-color: var(--cor-12);
+    color: var(--cor-1);
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 20px 0;
+    border-radius: .25rem;
+    box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font: 600 18px/1.35 "Poppins", sans-serif;
+}
+.btn-escuro:hover{
+    background-color:var(--cor-8);
+    color:var(--cor-12);
+}
+
+/* resposivo */
+@media(max-width:800px){
+    .ouro .prata{
+        margin: 0px;
+    }
+}
