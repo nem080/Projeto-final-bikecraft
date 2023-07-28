@@ -10,46 +10,55 @@
 
 .conteiner h2 {
     grid-column: 1/4;
-    padding: 40px 0 120px 0;
+    padding: 60px 0 100px 0;
     grid-auto-columns: 0 auto;
+    text-align: center;
 }
 
-.prata {
-    background-color: rgb(36, 36, 36);
-    padding: 20px;
-    border-radius: 13px;
-    max-width: 400px;
-    margin-bottom: 60px;
-    margin-left: 70px;
-}
+/* .conteiner h2::before{
+    display: inline-block;
+    content:"";
+    width: 30px;
+    height:8px;
+    background-color: var(--cor-p1);
+    position: relative;
+    top:-18px ;
+    left: -8px;
+} */
 
-.prata ul li {
-    display: flex;
-    padding-bottom: 10px;
-    gap:8px;
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 20px;
-    text-transform: capitalize;
+.seguro-corpo{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
 }
-
-.ouro {
-    background-color: rgb(36, 36, 36);
-    padding: 20px;
-    border-radius: 13px;
-    max-width: 400px;
-    margin-bottom: 60px;
-    margin-left: 80px;
+.seguro-corpo ul{
+    padding-bottom: 20px;
+    
 }
-
-.ouro ul li {
+.seguro-corpo ul li {
     display: flex;
     padding-bottom: 10px;
     gap: 8px;
-    color: #FFF;
     font-family: Roboto;
     font-size: 20px;
     text-transform: capitalize;
+    color:var(--cor-6);
+}
+.prata {
+    background-color:var(--cor-12);
+    padding: 20px;
+    border-radius: 13px;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.ouro {
+    background-color:var(--cor-12);
+    padding: 20px;
+    border-radius: 13px;
+    max-width: 600px;
+    margin-bottom: 60px;
 }
 
 .preco-ouro-prata {
@@ -61,26 +70,23 @@
 }
 
 .preco-ouro-prata h4 {
-    color: var(--c-6, #9C9C9C);
     font-family: Poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: 47px;
-    /* 130.556% */
     text-transform: uppercase;
 }
 
 .preco-ouro-prata p {
     text-align: right;
-    color: #FFF;
     font-family: Poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: 47px;
-    /* 130.556% */
     text-transform: capitalize;
+  
 }
 
 .preco-ouro-prata span {
@@ -88,36 +94,90 @@
     margin-top: -40px;
     margin-bottom: 40px;
     text-align: right;
-    color: var(--c-6, #9C9C9C);
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
-    /* 175% */
     text-transform: capitalize;
 }
 
 .btn-escuro {
     display: inline-block;
-    background-color: var(--cor-12);
-    color: var(--cor-1);
-    display: inline-block;
     padding: 1rem 2rem;
-    margin: 20px 0;
+    background-color: var(--cor-11);
     border-radius: .25rem;
     box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
+    color: var(--cor-1);
     font: 600 18px/1.35 "Poppins", sans-serif;
 }
 .btn-escuro:hover{
     background-color:var(--cor-8);
     color:var(--cor-12);
+    text-transform: uppercase;
+    font: 600 18px/1.35 "Poppins", sans-serif;
 }
 
 /* resposivo */
-@media(max-width:800px){
-    .ouro .prata{
-        margin: 0px;
+@media(max-width:800px) {
+    .conteiner h2{
+        padding-bottom:-80px;
     }
+    .seguro-corpo {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* padding: 50px; */
+    }
+
+        .seguro-corpo {
+            display: block;
+            background-color: aquamarine;
+            /* margin-bottom: 60px; */
+        }
+
+    .prata {
+        background-color: var(--cor-12);
+        padding: 20px;
+        border-radius: 13px;
+        max-width: 400px;
+    }
+    .ouro {
+        background-color: var(--cor-12);
+        padding: 20px;
+        border-radius: 13px;
+        max-width: 400px;
+    }
+
+    .seguro-corpo h4 {
+        font-size: 20px;
+    }
+
+    .seguro-corpo p {
+        font-size: 20px;
+    }
+
+    .seguro-corpo span {
+        font-size: 10px;
+        margin-top: -58px;
+    }
+
+    .seguro-corpo ul li {
+        font-size: 17px;
+    }
+
+    .seguro-corpo a {
+        font-size: 15px;
+    }
+
+}
+@media(max-width:600px) {
+    
+
+
+    .btn-escuro {
+        padding: .75rem 1rem;
+        font-size: 1rem;
+    }
+
 }
