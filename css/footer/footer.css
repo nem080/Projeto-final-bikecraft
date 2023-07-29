@@ -1,0 +1,134 @@
+.footer-bg{
+    padding-top: 60px;
+    background-color: var(--cor-12);
+    color: var(--cor-1);
+}
+.img-logo-footer{
+    padding-bottom: 70px;
+}
+.footer-conteudo{
+   /* display:grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 120px; */
+   display: flex;
+   flex-direction: row;
+   justify-content:flex-end;
+    gap: 120px;
+}
+.footer-contato{
+    width: 400px;
+}
+.footer-informacao {
+    padding-bottom: 10px;
+    width: 400px;
+}
+.footer-informacao ul li{
+    padding-bottom: 8px;
+}
+
+.footer-informacao a{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: var(--cor-6);
+}
+.footer-conteudo h3{
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+.footer-conteudo p{
+    line-height: 1.9em;
+    text-transform: capitalize;
+    color: var(--cor-6);
+}
+
+
+.footer-rede{
+    display: flex;
+    padding: 20px 0 80px;
+    gap: 20px;
+    line-height:normal;
+    text-transform: capitalize;
+}
+
+.direitos-reservado{
+    text-align: center;
+    padding-bottom: 40px;
+}
+@media(max-width: 1024px) {
+    .footer-conteudo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        /* padding-left: 40px; */
+    }
+
+    .footer-contato {
+        width: 400px;
+        padding-left: 150px;
+    }
+
+    .footer-informacao {
+        /* padding-bottom: 40px; */
+        width: 400px;
+    }
+}
+@media (max-width:768px) {
+    .footer-conteudo h3 {
+        padding-bottom: 20px;
+        text-transform: capitalize;
+        text-transform: uppercase;
+    }
+
+    .footer-contato {
+        width: 400px;
+        padding-left: 100px;
+    }
+
+    .footer-informacao {
+        /* padding-bottom: 40px; */
+        width: 400px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer-conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-contato {
+        width: 300px;
+        padding: 0px;
+    }
+
+    .footer-informacao {
+        padding-bottom: 40px;
+        width: 300px;
+    }
+
+    .footer-conteudo h3 {
+        padding-bottom: 20px;
+        text-transform: capitalize;
+        /* color: var(--cor-p4); */
+        text-transform: uppercase;
+    }
+
+    .footer-rede {
+        display: flex;
+        padding: 20px 0 10px;
+        gap: 20px;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    .direitos-reservado {
+        text-align: center;
+        padding-bottom: 40px;
+        text-transform: capitalize;
+        /* font-size: 18px; */
+    }
+}
