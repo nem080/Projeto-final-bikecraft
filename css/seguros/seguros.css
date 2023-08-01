@@ -9,14 +9,14 @@
 
 }
 
-.conteiner h2 {
-    grid-column: 1/4;
+.inform-conteudo h2 {
+    grid-column: 1/5;
     padding: 60px 0 100px 0;
     grid-auto-columns: 0 auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
-/* .conteiner h2::before{
+.inform-conteudo h2::before{
     display: inline-block;
     content:"";
     width: 30px;
@@ -25,7 +25,7 @@
     position: relative;
     top:-18px ;
     left: -8px;
-} */
+}
 
 .seguro-corpo{
     display:flex;
@@ -120,7 +120,7 @@
 /* resposivo */
 @media(max-width:800px) {
 
-    .conteiner h2 {
+    .seguro-corpo h2 {
         margin-bottom: -60px;
     }
 

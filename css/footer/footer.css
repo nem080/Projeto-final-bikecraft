@@ -31,6 +31,10 @@
     text-transform: capitalize;
     color: var(--cor-6);
 }
+
+.footer-informacao a:hover{
+    color: var(--cor-1)
+}
 .footer-conteudo h3{
     padding-bottom: 20px;
     text-transform: capitalize;
