@@ -1,6 +1,6 @@
 .bicicletas-lista {
     padding-top: 40px;
-    padding-bottom:20px;
+    /* padding-bottom:0px; */
 }
 
 .bicicletas-lista h2 {
@@ -8,7 +8,7 @@
 }
 .bicicletas-lista a{
     display: block;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 .bicicletas-lista a:hover{
@@ -29,7 +29,7 @@
     min-width: 280px;
 }
 .bicicletas-lista img{
-    padding-bottom: 16px;
+    padding-bottom: 10px;
 }
 .bicicletas-lista h3{
     padding-bottom: 10px;

@@ -74,6 +74,9 @@
         padding: 8px 12px;
         font-size: 14px;
     }
+    .header img {
+        max-width: 90px;
+    }
 }
 
 /* fim da nav */

@@ -1,6 +1,6 @@
 .seguro-bg {
     background-color: var(--cor-11);
-    bottom:60px;
+    bottom: 60px;
 }
 
 .seguro-corpo {
@@ -16,27 +16,29 @@
     /* text-align: center; */
 }
 
-.inform-conteudo h2::before{
+.inform-conteudo h2::before {
     display: inline-block;
-    content:"";
+    content: "";
     width: 30px;
-    height:8px;
+    height: 8px;
     background-color: var(--cor-p1);
     position: relative;
-    top:-18px ;
+    top: -18px;
     left: -8px;
 }
 
-.seguro-corpo{
-    display:flex;
+.seguro-corpo {
+    display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 }
-.seguro-corpo ul{
+
+.seguro-corpo ul {
     padding-bottom: 20px;
-    
+
 }
+
 .seguro-corpo ul li {
     display: flex;
     padding-bottom: 10px;
@@ -44,10 +46,11 @@
     font-family: Roboto;
     font-size: 20px;
     text-transform: capitalize;
-    color:var(--cor-6);
+    color: var(--cor-6);
 }
+
 .prata {
-    background-color:var(--cor-12);
+    background-color: var(--cor-12);
     padding: 20px;
     border-radius: 13px;
     max-width: 600px;
@@ -55,7 +58,7 @@
 }
 
 .ouro {
-    background-color:var(--cor-12);
+    background-color: var(--cor-12);
     padding: 20px;
     border-radius: 13px;
     max-width: 600px;
@@ -87,7 +90,7 @@
     font-weight: 600;
     line-height: 47px;
     text-transform: capitalize;
-  
+
 }
 
 .preco-ouro-prata span {
@@ -113,10 +116,13 @@
     color: var(--cor-1);
     font: 600 18px/1.35 "Poppins", sans-serif;
 }
+
 .btn-escuro:hover {
     background-color: var(--cor-8);
-    color: var(--cor-1);color: var(--cor-12);
+    color: var(--cor-1);
+    color: var(--cor-12);
 }
+
 /* resposivo */
 @media(max-width:800px) {
 
@@ -130,7 +136,7 @@
         text-align: center;
     }
 
-    
+
 
     .prata {
         background-color: var(--cor-12);
@@ -167,25 +173,44 @@
     .seguro-corpo a {
         font-size: 15px;
     }
-    
+
 
 }
 
 @media(max-width:600px) {
     .btn-escuro {
-            padding: .75rem 1rem;
-            font-size: 1rem;
-        }
+        padding: .75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .inform-conteudo h2 {
+        padding-top: 60px;
+        margin-bottom: -40px;
+        text-align: center;
+    }
+
+    .inform-conteudo h2::before {
+        display: inline-block;
+        content: "";
+        width: 6px;
+        height: 22px;
+        background-color: var(--cor-p1);
+        position: relative;
+        top:0px;
+        left: -8px;
+    }
 }
+
 @media(max-width:375px) {
-    .conteiner h2 {
-        padding-top:20px ;
+    .inform-conteudo h2 {
+        padding-top: 20px;
         margin-bottom: -80px;
     }
+
     .seguro-corpo ul li {
-            font-size: 17px;
-            width: 250px;
-        }
+        font-size: 17px;
+        width: 250px;
+    }
 
     .btn-escuro {
         padding: 8px 12px;

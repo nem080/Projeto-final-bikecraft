@@ -97,11 +97,14 @@
 
 @media (max-width:600px) {
     .footer-conteudo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: center;
         gap: 40px;
+        text-align: center;
+    }
+    .footer-conteudo{
+       margin-left: 120px;
     }
 
     .footer-contato {
@@ -127,6 +130,7 @@
         gap: 20px;
         line-height: normal;
         text-transform: capitalize;
+        margin-left: 80px;
     }
 
     .direitos-reservado {
@@ -134,5 +138,21 @@
         padding-bottom: 40px;
         text-transform: capitalize;
         /* font-size: 18px; */
+    }
+}
+@media(max-width:375px) {
+    .footer-conteudo {
+            margin-left: 18px;
+        }
+    .footer-rede {
+        display: flex;
+        padding: 20px 0 10px;
+        gap: 20px;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-left: 88px;
+    }
+    .img-logo-footer{
+       max-width: 90px;
     }
 }
