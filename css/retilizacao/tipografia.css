@@ -66,9 +66,11 @@
         font-size: 3rem;
     }
 
-    .font-2-m,
+    .font-2-m{
+        font-size:14px;
+    }
     .font-1_5-xl{
-        font-size:1rem;
+        font-size:16px;
     }
 
     .font-2-l,
@@ -91,7 +93,7 @@
 }
 @media (max-width: 768px){
     .font-1-l {
-            font-size: 1.125rem;
+            font-size: 18px;
             
         }
 }

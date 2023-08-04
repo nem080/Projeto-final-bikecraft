@@ -6,10 +6,15 @@
     margin-left: auto;
     margin-right: auto;
 }
+/* .active {
+    background-color:var(--cor-p5);
+    padding: 0px 14px;
+    border-radius: 13px;
+} */
 .botao {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color:var(--cor-p1);
+    background-color: var(--cor-p1);
     border-radius: .25rem;
     box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
@@ -32,6 +37,7 @@
     cursor: pointer;
     margin-bottom: 30px;
 }
+
 /* .link-direto::after{
     content: "";
     display: block;
@@ -39,7 +45,7 @@
     height: 4px;
     background-color: var(--cor-p1);
 } */
-.link-direto:hover{
+.link-direto:hover {
     color: var(--cor-p4);
 }
 
@@ -51,6 +57,12 @@
         padding: .75rem 1rem;
         font-size: 1rem;
     }
+}
 
-
+@media(max-width:375px) {
+    .botao {
+        padding: 12px 12px;
+        font-size: 1rem;
+        margin: 0 auto;
+    }
 }

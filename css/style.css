@@ -3,14 +3,17 @@
 @import "/css/retilizacao/cores.css";
 
 @import "/css/global/header.css";
+@import "/css/global/footer.css";
 
 /* componentes */
 @import "/css/retilizacao/componentes.css";
-/* home */
+/* pagina home */
 @import "/css/home/introducao.css";
 @import "/css/home/bicicleta-lista.css";
 @import "/css/home/tecnologia.css";
 @import "/css/home/parceiros.css";
 @import "/css/home/relatos.css";
-@import "/css/home/seguros.css";
-@import "/css/footer/footer.css";
+@import "/css/seguros/seguros.css";
+
+/* pagina termos & condições */
+@import "/css/termos&condicoes/termos.css"
