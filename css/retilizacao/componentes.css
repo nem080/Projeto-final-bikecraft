@@ -6,6 +6,42 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+/* titulos das paginas segudarias */
+.titulo-pag-segundaria {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: start;
+    gap: 6px;
+    background-color: var(--cor-11);
+    padding: 60px 0px 40px 130px;
+    margin-bottom: 60px;
+}
+.titulo-pag-segundaria span {
+    display: block;
+    /* padding: 0rem 0rem 1.25rem; */
+    letter-spacing: .0169rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.titulo-pag-segundaria span::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 4px;
+    background-color: var(--cor-p1);
+    position: absolute;
+    left: -24px;
+    top: 6px;
+}
+
+.titulo-pag-segundaria h1 {
+    text-transform: uppercase;
+}
+/* fim do titulos segundarios */
+
+
 /* .active {
     background-color:var(--cor-p5);
     padding: 0px 14px;

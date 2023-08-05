@@ -16,4 +16,7 @@
 @import "/css/seguros/seguros.css";
 
 /* pagina termos & condições */
-@import "/css/termos&condicoes/termos.css"
+@import "/css/termos&condicoes/termos.css";
+
+/* pagina de bicicletas cards */
+@import "/css/bicicletas/bicicletas.css";

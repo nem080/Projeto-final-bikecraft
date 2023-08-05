@@ -4,11 +4,8 @@
     justify-content:start;
     gap:6px;
     background-color: var(--cor-11);
-    /* padding:60px 0px 40px 130px; */
+    padding:60px 0px 40px 130px;
     margin-bottom: 60px;
-}
-.corpo-termo{
-    padding-bottom: 60px;
 }
 .titulo-pag-segundaria span{
     display: block;
@@ -17,7 +14,6 @@
     text-transform: uppercase;
     position: relative;
 }
-
 .titulo-pag-segundaria span::before{
     content:"";
     display: block;
@@ -31,6 +27,11 @@
 .titulo-pag-segundaria h1{
     text-transform: uppercase;
 }
+
+.corpo-termo{
+    padding-bottom: 60px;
+}
+
 .conteudo-termo{
     display: block;
     max-width: 41.5625rem;
@@ -62,19 +63,32 @@
         margin-bottom: 60px;
     }
 }
-@media(max-width:765px){
-    .corpo-termo{
-        padding:40px ;
+@media(max-width:769px){
+    .titulo-pag-segundaria{
+        text-align: center;
+        padding: 40px 0px 10px 0px;
+        justify-content:center ;
+    }
+    .titulo-pag-segundaria span::before {
+        display: none;
+        /* content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: var(--cor-p1);
+        position: absolute;
+        left: 68px;
+        top: -4px;
+        border-radius: 13px; */
+    }
+    .corpo-termo {
+        padding:40px;
     }
 }
-@media(max-width:415) {
-    .titulo-pag-segundaria {
-        display: grid;
-        grid-template-rows: 1fr;
-        justify-content: start;
-        gap: 6px;
-        background-color: var(--cor-11);
-        /* padding:60px 0px 40px 130px; */
-        margin-bottom: 60px;
+@media(max-width:415px){
+    .titulo-pag-segundaria{
+        display:block;
+        padding :15px;
     }
 }
+
