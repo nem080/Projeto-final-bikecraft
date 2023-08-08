@@ -1,3 +1,27 @@
-body{
-    background-color:aquamarine;
+.conteudo-bg{
+    background-color: var(--cor-12);
+    padding: 40px 0 ;
+}
+.bicicleta-conteudo-pagina{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 40px;
+    padding: 60px 0 60px;
+}
+.imgCards span{
+    background-color: var(--cor-12);
+    padding: 8px 16px 8px 8px;
+    color: var(--cor-1);
+    display: inline-block;
+}
+.bicicleta-descricaoCard h2{
+    padding-bottom: 20px;
+}
+.bicicleta-descricaoCard p{
+    padding-bottom: 25px;
+}
+.bicicleta-descricaoCard li{
+    display: flex;
+    gap: 10px;
+
 }

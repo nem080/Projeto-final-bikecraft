@@ -9,7 +9,6 @@
 @import "/css/retilizacao/componentes.css";
 /* pagina home */
 @import "/css/home/introducao.css";
-@import "/css/home/bicicleta-lista.css";
 @import "/css/home/tecnologia.css";
 @import "/css/home/parceiros.css";
 @import "/css/home/relatos.css";
@@ -18,5 +17,6 @@
 /* pagina termos & condições */
 @import "/css/termos&condicoes/termos.css";
 
-/* pagina de bicicletas cards */
+/* pagina de bicicletas */
+@import "/css/bicicletas/bicicleta-lista.css";
 @import "/css/bicicletas/bicicletas.css";
