@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    padding: 60px 0 60px;
+    padding: 60px 0px;
     justify-items: center;
 }
 .bicicleta-descricaoCard {
@@ -18,7 +18,7 @@
     grid-column: 1/ -1;
 }
 .bicicleta-descricaoCard h2 {
-    margin-bottom: 20px;
+    margin-bottom: -30px;
     position: relative;
 }
 .bicicleta-descricaoCard h2::before {
@@ -31,7 +31,7 @@
    top: -6px;
 }
 .bicicleta-descricaoCard p {
-    margin-bottom: 30px;
+    margin-bottom: -20px;
 }
 
 .bicicleta-descricaoCard a {
@@ -54,7 +54,7 @@
 
 .bicicleta-descricaoCard ul {
     display: grid;
-    gap: 16px;
+    gap: 8px;
 }
 
 .bicicleta-descricaoCard li {
@@ -79,22 +79,49 @@
         }
     .bicicleta-conteudo-pagina {
         grid-template-columns: 1fr;
-        /* padding: 10px 0 40px; */
+        padding: 0px 0 60px 0;
         text-align: center;
 }
     .bicicleta-descricaoCard{
         grid-template-columns: 1fr;
     }
+    .imgCards{
+        margin-bottom: 10px;
+    }
+    .bicicleta-descricaoCard h2::before {
+         display: none;
+        }
+    .bicicleta-descricaoCard h2{
+        margin-bottom: -10px;
+        color: var(--cor-p1);
+    }
     .bicicleta-descricaoCard p{
-        margin:20px 40px 20px 0;
+        padding:40px 0px 20px 0px;
     }
     .bicicleta-descricaoCard ul{
         grid-template-columns: 1fr 1fr;
-        margin-bottom: 60px;
+        margin:0 auto;
+        padding-bottom: 46px;
+        gap: 30px;
         align-items: center;
     }
     .bicicleta-descricaoCard a{
         place-self: center;
         
+    }
+}
+@media(max-width:375px){
+    .bicicleta-descricaoCard ul {
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+            padding-bottom: 46px;
+            gap: 30px;
+            align-items: center;
+        }
+
+    .conteudo-bg {
+        background-color: var(--cor-12);
+        /* padding: 40px 0; */
+        margin-bottom: 20px;
     }
 }
