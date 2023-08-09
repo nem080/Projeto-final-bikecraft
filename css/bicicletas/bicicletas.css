@@ -1,27 +1,100 @@
-.conteudo-bg{
+.conteudo-bg {
     background-color: var(--cor-12);
-    padding: 40px 0 ;
+    padding: 40px 0;
 }
-.bicicleta-conteudo-pagina{
+.bicicleta-conteudo-pagina {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding: 60px 0 60px;
+    justify-items: center;
 }
-.imgCards span{
+.bicicleta-descricaoCard {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.bicicleta-descricaoCard h2,
+.bicicleta-descricaoCard p {
+    grid-column: 1/ -1;
+}
+.bicicleta-descricaoCard h2 {
+    margin-bottom: 20px;
+    position: relative;
+}
+.bicicleta-descricaoCard h2::before {
+    content: "";
+    width: 14px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    display: block;
+    position: absolute;
+   top: -6px;
+}
+.bicicleta-descricaoCard p {
+    margin-bottom: 30px;
+}
+
+.bicicleta-descricaoCard a {
+    place-self: end;
+}
+.imgCards {
+    position: relative;
+
+}
+.imgCards span {
     background-color: var(--cor-12);
     padding: 8px 16px 8px 8px;
-    color: var(--cor-1);
+    color: var(--cor-p1);
     display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    border-radius: 5px 0 0 5px;
 }
-.bicicleta-descricaoCard h2{
-    padding-bottom: 20px;
-}
-.bicicleta-descricaoCard p{
-    padding-bottom: 25px;
-}
-.bicicleta-descricaoCard li{
-    display: flex;
-    gap: 10px;
 
+.bicicleta-descricaoCard ul {
+    display: grid;
+    gap: 16px;
+}
+
+.bicicleta-descricaoCard li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.bicicleta-descricaoCard li img{
+    width: 24px;
+}
+
+@media(max-width:1024px){
+    .bicicleta-descricaoCard h2,
+    .bicicleta-descricaoCard p{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:768px) {
+    .conteudo-bg {
+        background-color: var(--cor-12);
+        padding: 20px 0;
+        }
+    .bicicleta-conteudo-pagina {
+        grid-template-columns: 1fr;
+        /* padding: 10px 0 40px; */
+        text-align: center;
+}
+    .bicicleta-descricaoCard{
+        grid-template-columns: 1fr;
+    }
+    .bicicleta-descricaoCard p{
+        margin:20px 40px 20px 0;
+    }
+    .bicicleta-descricaoCard ul{
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 60px;
+        align-items: center;
+    }
+    .bicicleta-descricaoCard a{
+        place-self: center;
+        
+    }
 }
