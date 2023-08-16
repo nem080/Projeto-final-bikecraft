@@ -9,7 +9,7 @@
 
 .font-1-m,
 .font-1-m-b {
-    font: 400 18px/1.35 "Poppins", sans-serif;
+    font: 400 1.125rem/1.35 "Poppins", sans-serif;
 }
 
 .font-1-m-b {
@@ -27,10 +27,10 @@
 }
 
 .font-1-xl {
-    font: 600 2rem/1.25 "Poppins", sans-serif;
+    font: 600 2.5rem/1.25 "Poppins", sans-serif;
 }
 .font-1_5-xl {
-    font: 600 2.5rem/1.50 "Poppins", sans-serif;
+    font: 600 3.5rem/1.50 "Poppins", sans-serif;
 }
 
 .font-1-xxl {
@@ -61,16 +61,18 @@
 
 /* responsivo */
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .font-1-xxl {
-        font-size: 3rem;
+        font-size: 2.225rem;
     }
-
+    .font-1-xl{
+        font-size: 2rem;
+    }
     .font-2-m{
-        font-size:14px;
+        font-size:.875rem;
     }
     .font-1_5-xl{
-        font-size:16px;
+        font-size:1rem;
     }
 
     .font-2-l,

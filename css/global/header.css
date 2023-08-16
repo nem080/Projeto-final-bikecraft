@@ -41,7 +41,11 @@
 .header-menu a:hover:after {
     width: 100%;
 }
-
+.home{
+    display: inline-block;
+    line-height: normal;
+    /* top: -10px; */
+}
 
 /* RESPONSIVO */
 /* Inicio nav */

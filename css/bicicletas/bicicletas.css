@@ -1,6 +1,5 @@
 .conteudo-bg {
-    background-color: var(--cor-12);
-    padding: 40px 0;
+    background: linear-gradient(to right, var(--cor-1) 30%,  var(--cor-12) 30%);
 }
 .bicicleta-conteudo-pagina {
     display: grid;
@@ -74,8 +73,9 @@
 }
 @media(max-width:768px) {
     .conteudo-bg {
-        background-color: var(--cor-12);
+        background: linear-gradient( var(--cor-1) 5%,  var(--cor-12) 30%);
         padding: 20px 0;
+        margin-bottom: 20px;
         }
     .bicicleta-conteudo-pagina {
         grid-template-columns: 1fr;

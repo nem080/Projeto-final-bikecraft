@@ -20,3 +20,7 @@
 /* pagina de bicicletas */
 @import "/css/bicicletas/bicicleta-lista.css";
 @import "/css/bicicletas/bicicletas.css";
+
+/* pagina de bicicletas */
+@import"/css/page-seguros/pageSeguros.css";
+@import"/css/page-seguros/duvidas.css";

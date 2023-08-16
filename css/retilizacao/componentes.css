@@ -6,6 +6,14 @@
     margin-left: auto;
     margin-right: auto;
 }
+.conteinerMedio {
+    box-sizing: border-box;
+    max-width:1100px;
+    padding-left: 40px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* titulos das paginas segudarias */
 .titulo-pag-segundaria {
@@ -19,7 +27,6 @@
 }
 .titulo-pag-segundaria span {
     display: block;
-    /* padding: 0rem 0rem 1.25rem; */
     letter-spacing: .0169rem;
     text-transform: uppercase;
     position: relative;
@@ -41,12 +48,6 @@
 }
 /* fim do titulos segundarios */
 
-
-/* .active {
-    background-color:var(--cor-p5);
-    padding: 0px 14px;
-    border-radius: 13px;
-} */
 .botao {
     display: inline-block;
     padding: 1rem 2rem;
@@ -62,7 +63,23 @@
     background-color: var(--cor-p3);
     color: var(--cor-1);
 }
-
+.seta{
+    display: flex;
+    align-items: center;
+    color: var(--cor-p5);
+}
+.botao.seta::after{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height:10px;
+    margin-left: 12px;
+    background-image: url(/img/icones/seta.svg);
+    transition: transform 0.5s;
+}
+.botao.seta:hover::after{
+    transform: translateX(8px); 
+}
 .link-direto {
     font-size: 2rem;
     font-style: normal;
@@ -87,7 +104,46 @@
 
 
 /* Resposividade */
-/* botão*/
+/* titulo segundario das paginas */
+@media(max-width:1024px) {
+    .titulo-pag-segundaria {
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+    .titulo-pag-segundaria span::before {
+         display: none;
+    
+    }
+    .titulo-pag-segundaria span{
+        text-align: center;
+    }
+}
+
+@media(max-width:769px) {
+    .titulo-pag-segundaria {
+        text-align: center;
+        padding: 40px 0px 10px 0px;
+        justify-content: center;
+    }
+
+    .titulo-pag-segundaria span::before {
+        display: none;
+
+    }
+
+    .corpo-termo {
+        padding: 40px;
+    }
+}
+
+@media(max-width:415px) {
+    .titulo-pag-segundaria {
+        display: block;
+        padding: 15px;
+    }
+}
+
+/* midia do botão */
 @media (max-width: 600px) {
     .botao {
         padding: .75rem 1rem;

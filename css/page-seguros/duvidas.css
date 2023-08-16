@@ -1,0 +1,62 @@
+.duvidasrespostas {
+   margin-bottom: 60px;
+   
+}
+
+.duvidasrespostas h2 {
+   margin: 60px 0;
+   text-transform: capitalize
+}
+
+.perguntaRespostas {
+   margin: 0 0 20px;
+   
+}
+
+.pergunta {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: var(--cor-2);
+   padding: 15px 0 15px 20px;
+}
+
+.setaAbrir
+{
+  /* background-color: aqua; */
+   padding-right: 20px;
+}
+
+
+.setaFechar {
+   display: none;
+   background-image: url('/img/icones/seta-fechar.svg');
+   background-size: contain;
+   width: 1.625rem;
+   height: 0.5rem;
+   margin-left: 0.5rem;
+   cursor: pointer;
+   padding-right: 20px;
+}
+
+.resposta {
+   display: none;
+   padding: 10px;
+}
+
+@media(max-width:1024px){
+   .duvidasrespostas h2{
+      text-align: center;
+   }
+      .pergunta {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+}
+
+@media(max-width:375px){
+   .setaAbrir{
+      padding :10px;
+   }
+}
