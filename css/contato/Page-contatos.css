@@ -1,0 +1,180 @@
+
+.page-contato-bg{
+    background-color: var(--cor-11);
+    padding-bottom: 60px;
+}
+.contato-bg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--cor-1);
+}
+
+.contato-preto{
+    width: 468px;
+    height: 604px;
+    background-color: var(--cor-12);
+    padding: 60px 20px;
+}
+.contato-preto h3{
+    text-transform: capitalize;
+}
+.contato-preto p{
+    text-transform: capitalize;
+}
+.contato-preto h3, p{
+    padding-bottom: 20px;
+}
+
+.contato-preto li{
+    padding-bottom: 10px;
+}
+.contato-preto a{
+    display:flex;
+    align-items: center;
+}
+.contato-rede{
+    display: flex;
+    margin-left: 10px;
+}
+.contato-rede a:hover{
+    box-shadow: 0 10px 10px rgba(154, 82, 82, 0.2);
+}
+.contato-rede img{
+    padding:20px 20px;
+}
+.contato-rede img:hover{
+    padding: 10px 20px;
+}
+.local::before{
+    content:"";
+    width: 20px;
+    height: 20px;
+    background-image: url("/img/icones/local.svg");
+    display: inline-block;
+}
+.email::before{
+    content:"";
+    width: 20px;
+    height: 20px;
+    background-image: url("/img/icones/email.svg");
+    display: inline-block;
+}
+.fone::before{
+    content:"";
+    width: 20px;
+    height: 20px;
+    background-image: url("/img/icones/telefone.svg");
+    display: inline-block;
+}
+.local, 
+.email, 
+.fone{
+    display:grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+
+
+/* formulario */
+/* .form-contato{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vh;
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+.juscao{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0px;
+    padding-bottom: 20px;
+}
+.group-nome,
+.group-tel,
+.grup-email{
+    display:grid; align-items: center;
+    color: var(--cor-12);
+}
+.group-nome >input{
+    width: 280px;
+    height: 30px;
+}
+.group-tel > input{
+    width:280px;
+    height: 30px;
+    margin-bottom: -18px;
+}
+.grup-email > input{
+    width: 580px;
+    height: 30px;
+    align-items: center;
+    
+} */
+
+.form-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+.juscao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0px;
+    padding-bottom: 20px;
+}
+
+.group-nome,
+.group-tel,
+.grup-email {
+    display: grid;
+    align-items: center;
+    color: var(--cor-12);
+}
+
+.group-nome > input,
+.group-tel > input{
+    width: 85%;
+    height: 30px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+}
+.grup-email>input {
+    width: 170%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.texto-mensagem label,
+.texto-mensagem textarea {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.texto-mensagem textarea {
+    width: 170%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.botao {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    /* background-color: #0056b3; */
+}
