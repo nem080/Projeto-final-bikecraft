@@ -47,6 +47,48 @@
     /* top: -10px; */
 }
 
+.active a{
+  color: var(--cor-p1); 
+   
+}
+
+
+
+
+.header-menu .has-submenu {
+    position: relative;
+}
+
+.header-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* background-color: var(--cor-9); */
+    /* padding: -60px; */
+}
+
+.header-menu .has-submenu:hover .submenu {
+    display: block;
+}
+
+.header-menu .submenu li {
+    
+    margin: -20px 0;
+}
+
+.header-menu .submenu a {
+    color: var(--cor-1);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    
+}
+
+.header-menu .submenu a:hover {
+    color: var(--cor-p1);
+}
+
 /* RESPONSIVO */
 /* Inicio nav */
 @media (max-width: 800px) {
@@ -62,6 +104,13 @@
 
     .header-menu a:hover {
         background-color:var(--cor-10);
+    }
+
+    .header-menu .submenu a{
+        background-color: var(--cor-11);
+        font-size: 12px;
+        padding: 10px;
+        margin-top: 20px;
     }
 
     .header a:after {

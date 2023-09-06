@@ -18,20 +18,42 @@
 <body>
   <header class="header-bg">
     <div class="conteiner  header">
-      <a href="./">
+      <a href="./index.html">
         <img src="./img/bikcraft.svg" alt="Bikcraft">
       </a>
 
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-1">
-          <li class="active"><a href="bicicletas.html">Bicicletas</a></li>
-          <li><a href="seguros.html">Seguros</a></li>
-          <li><a href="./contato.html">Contato</a></li>
-          <!-- <a class="home" href="./contato.html"><img src="./img/icones/home.svg" alt="inicio"></a> -->
+          <li class="has-submenu">
+            <a href="bicicletas.html">Bicicletas</a>
+            <ul class="submenu">
+              <li><a href="/nimbus.html">Nimbus</a></li>
+              <li><a href="/magic.html">Magic</a></li>
+              <li><a href="/nebula.html">Nebula</a></li>
+            </ul>
+          </li>
+
+          <li class="has-submenu">
+            <a href="/seguros.html">Seguros</a>
+            <ul class="submenu">
+              <li><a href="#">Prata</a></li>
+              <li><a href="#">Ouro</a></li>
+            </ul>
+          </li>
+          
+          <li class="has-submenu">
+            <a href="./contato.html">Contato</a>
+          <ul class="submenu">
+            <li><a href="/termos.html">Termo</a></li>
+            <li><a href="#">Opção 2</a></li>
+          </ul>
+          </li>
+
         </ul>
       </nav>
     </div>
   </header>
+
   <!-- secão introdução -->
   <main class="introducao-bg">
     <div class="conteiner introducao">
