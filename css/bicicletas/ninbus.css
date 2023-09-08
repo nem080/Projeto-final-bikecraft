@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: start;
     gap: 40px;
-   padding: 0px 0 60px;
+   padding: 0px 0 10px;
     margin: 10px;
 }
 
@@ -95,6 +95,19 @@
 
 .bicicleta-ficha span {
     color: var(--cor-6);
+}
+
+.bg-seguro-depoimento{
+    background-color: var(--cor-10);
+    height: 422px;
+}
+.conteudobikeindividual{
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+}
+.conteudobikeindividual img{
+    max-width: 620px;
+    
 }
 
 @media (max-width: 800px) {
