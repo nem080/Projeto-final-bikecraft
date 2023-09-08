@@ -1,0 +1,37 @@
+.conteudo-sobre{
+    max-width: 900px;
+    line-height: 1.5;  
+    padding-bottom: 40px;    
+}
+.conteudo-sobre h3{
+    font-size:19px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+.conteudo-sobre h4{
+    font-size: 16px;
+    padding: 20px 0 5px;
+    font-weight: bold;
+    position: relative; 
+}
+
+.conteudo-sobre h4::before{
+    content: " ";
+    width: 12px;
+    height: 4px;
+    display: block;
+    background:var(--cor-p1);
+    position: absolute;
+    top: 29px;
+    left:-17px;
+}
+.conteudo-sobre p{
+    color: aquamarine;
+    letter-spacing:2px;
+}
+.conteudo-sobre li{
+    list-style: square;
+    
+}

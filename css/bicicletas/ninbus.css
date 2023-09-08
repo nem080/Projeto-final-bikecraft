@@ -108,13 +108,45 @@
         grid-row: 2;
     }
 }
+@media (max-width: 600px){
+    .has-submenu {
+        margin-bottom: 10px;
+    }
+}
 
 @media (max-width: 400px) {
     .bicicleta-informacoes {
         grid-template-columns: 1fr;
+        
     }
+
+    .bicicleta-conteudo {
+        max-width: 400px;
+    /* Define a largura máxima da div */
+    width: 100%;
+    /* Garante que a div ocupe 100% da largura disponível */
+    margin: 0 auto;
+    /* Centraliza horizontalmente o conteúdo */
+    padding-left: 70px;
+    /* Adiciona algum espaçamento interno, se necessário */
+}
 
     .bicicleta-comprar {
         grid-template-columns: 1fr;
+    }
+   .header-menu .home {
+       display: none;
+   }
+    .has-submenu {
+        margin-bottom: 75px;
+    }
+}
+
+@media (max-width:381px){
+   .header-menu .home{
+        display:none;
+    }
+    .has-submenu {
+        /* margin-bottom:10px; */
     }
 }
