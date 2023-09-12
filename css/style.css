@@ -1,6 +1,7 @@
 @import "/css/global/global.css";
 @import "/css/retilizacao/tipografia.css";
 @import "/css/retilizacao/cores.css";
+@import "/css/retilizacao/formulario.css";
 
 @import "/css/global/header.css";
 @import "/css/global/footer.css";
@@ -22,10 +23,11 @@
 @import "/css/bicicletas/bicicletas.css";
 @import "/css/bicicletas/ninbus.css";
 
-/* pagina de bicicletas */
+/* pagina de seguro */
 @import"/css/page-seguros/pageSeguros.css";
 @import"/css/page-seguros/duvidas.css";
 
 /* pagina contato */
 @import "/css/contato/Page-contatos.css";
 @import "/css/sobre/sobre.css";
+@import "/css/contato/loja-contato.css";

@@ -1,6 +1,6 @@
-
+/* 
 .page-contato-bg{
-    background-color: var(--cor-11);
+    background: linear-gradient(var(--cor-12) 500px, var(--cor-1) 0px);
     padding-bottom: 60px;
 }
 .contato-bg{
@@ -11,7 +11,6 @@
 
 .contato-preto{
     width: 468px;
-    height: 604px;
     background-color: var(--cor-12);
     padding: 60px 20px;
 }
@@ -75,43 +74,7 @@
 }
 
 
-/* formulario */
-/* .form-contato{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100vh;
-    padding-top: 60px;
-    margin: 0 auto;
-}
 
-.juscao{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 0px;
-    padding-bottom: 20px;
-}
-.group-nome,
-.group-tel,
-.grup-email{
-    display:grid; align-items: center;
-    color: var(--cor-12);
-}
-.group-nome >input{
-    width: 280px;
-    height: 30px;
-}
-.group-tel > input{
-    width:280px;
-    height: 30px;
-    margin-bottom: -18px;
-}
-.grup-email > input{
-    width: 580px;
-    height: 30px;
-    align-items: center;
-    
-} */
 
 .form-contato {
     display: grid;
@@ -173,8 +136,131 @@
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-}
+} */
 
-.botao:hover {
-    /* background-color: #0056b3; */
-}
+
+
+
+ /* <================== segunda opção de css ==================> */
+
+ #contato {
+     /* background: linear-gradient(var(--cor-12) 600px, var(--cor-1) 0px); */
+ }
+ .contato-bg-titulo{
+    margin:0px;
+ }
+
+ .contato {
+     display: grid;
+     grid-template-columns: 5fr 7fr;
+ }
+
+ .contato-dados,
+ .contato-formulario {
+     padding: 60px;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+ }
+
+ .contato-dados {
+     border-radius: 5px 0 0 5px;
+     background: var(--cor-12);
+ }
+
+ .contato-formulario {
+     border-radius: 0 5px 5px 0;
+     background: var(--cor-1);
+ }
+
+ .contato-dados h2 {
+     margin-bottom: 60px;
+ }
+
+ .contato-endereco {
+     margin-bottom: 32px;
+     padding-left: 28px;
+     background: url("../../img/icones/local.svg") no-repeat 0px 2px;
+ }
+
+ .contato-endereco p {
+     margin-bottom: 8px;
+ }
+
+ .contato-meios a {
+     display: block;
+     max-width: max-content;
+     margin-bottom: 8px;
+     padding-left: 28px;
+ }
+
+ .contato-meios a:hover {
+     color: var(--cor-1);
+ }
+
+ .contato-meios a:first-child {
+     background: url("../../img/icones/email.svg") no-repeat 0px 2px;
+ }
+
+ .contato-meios a:nth-child(2) {
+     margin-bottom: 32px;
+ }
+
+ .contato-meios a:nth-child(3) {
+     background: url("../../img/icones/telefone.svg") no-repeat 0px 2px;
+     margin-bottom: 60px;
+ }
+
+ .contato-redes {
+     display: flex;
+     gap: 30px;
+     padding-left: 28px;
+ }
+    
+
+ @media (max-width: 800px) {
+     .contato {
+         grid-template-columns: 1fr;
+     }
+     #contato{
+        background-color: var(--cor-12);
+     }
+    .contato-bg-titulo {
+        margin-bottom: 20px;
+    }
+    .contato-bg-titulo h2 {
+        padding-bottom: 10px;
+    }
+
+  
+
+     .contato-dados h2{
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px 0;
+     }
+     .contato-dados{
+        margin: 0 auto;
+     }
+     .contato-dados,
+     .contato-formulario {
+         padding: 20px;
+
+         top: -20px;
+     }
+
+     .contato-dados {
+         border-radius: 5px 5px 0 0;
+     }
+
+     .contato-formulario {
+         /* border-radius: 0 0 5px 5px; */
+     }
+
+     .contato-dados h2,
+     .contato-meios a:nth-child(3) {
+         margin-bottom: 32px;
+     }
+
+     .contato-redes {
+         margin-bottom: 12px;
+     }
+ }
