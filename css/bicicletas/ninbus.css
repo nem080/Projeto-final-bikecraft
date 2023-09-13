@@ -30,7 +30,7 @@
     min-width: 100%;
 }
 
-.bicicleta-conteudo>p {
+.bicicleta-conteudo > p {
     margin-bottom: 32px;
 }
 
@@ -59,7 +59,11 @@
 .bicicleta-conteudo h2 {
     text-transform: uppercase;
     letter-spacing: 0.015em;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
+    padding: 5px;
+    background-color: var(--cor-p1);
+    color: var(--cor-11);
+    border-radius: 5px 5px 0px 0px;
 }
 
 .bicicleta-informacoes,
@@ -128,7 +132,7 @@
 }
 .seguro-interno-conteudo p {
     padding-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 .detalheamarelo{
@@ -137,6 +141,15 @@
 }
 
 @media (max-width: 800px) {
+    .bicicleta-nibus {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 40px;
+        padding: 0px 0 10px;
+        margin: 10px;
+    }
+
     .bicicleta {
         grid-template-columns: 1fr;
         padding-top: 40px;
@@ -146,16 +159,19 @@
     .bicicleta-imagens {
         grid-row: 2;
     }
-/* media do seguro interno */
+
+    /* media do seguro interno */
     .bg-seguro-depoimento {
         background-color: var(--cor-11);
         margin-bottom: 0px;
-        box-shadow:inset 0 -90px var(--cor-11);
+        box-shadow: inset 0 -90px var(--cor-11);
     }
-    .conteudobikeindividual{
+
+    .conteudobikeindividual {
         grid-template-columns: 1fr;
     }
-    .seguro-interno-conteudo{
+
+    .seguro-interno-conteudo {
         grid-row: 1;
         padding-bottom: 20px;
         text-align: center;

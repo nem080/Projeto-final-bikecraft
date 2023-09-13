@@ -144,7 +144,7 @@
  /* <================== segunda opção de css ==================> */
 
  #contato {
-     /* background: linear-gradient(var(--cor-12) 600px, var(--cor-1) 0px); */
+     background: linear-gradient(var(--cor-10) 600px, var(--cor-1) 0px);
  }
  .contato-bg-titulo{
     margin:0px;
@@ -153,6 +153,7 @@
  .contato {
      display: grid;
      grid-template-columns: 5fr 7fr;
+     padding: 20px 0;
  }
 
  .contato-dados,
@@ -251,9 +252,9 @@
          border-radius: 5px 5px 0 0;
      }
 
-     .contato-formulario {
-         /* border-radius: 0 0 5px 5px; */
-     }
+     /* .contato-formulario {
+         border-radius: 0 0 5px 5px;
+     } */
 
      .contato-dados h2,
      .contato-meios a:nth-child(3) {
