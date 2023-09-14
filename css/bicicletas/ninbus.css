@@ -149,7 +149,9 @@
         padding: 0px 0 10px;
         margin: 10px;
     }
-
+    .bicicleta-comprar{
+        justify-content: space-evenly;
+    }
     .bicicleta {
         grid-template-columns: 1fr;
         padding-top: 40px;
@@ -175,6 +177,12 @@
         grid-row: 1;
         padding-bottom: 20px;
         text-align: center;
+        padding: 40px 0 0;
+        /* margin-bottom: 20px; */
+    }
+    .interna-seguro-img{
+        max-height: 400px;
+        padding:20px;
     }
 }
 @media (max-width: 600px){
@@ -186,26 +194,26 @@
 @media (max-width: 400px) {
     .bicicleta-informacoes {
         grid-template-columns: 1fr;
-        
+
     }
 
     .bicicleta-conteudo {
         max-width: 400px;
-    /* Define a largura máxima da div */
-    width: 100%;
-    /* Garante que a div ocupe 100% da largura disponível */
-    margin: 0 auto;
-    /* Centraliza horizontalmente o conteúdo */
-    padding-left: 70px;
-    /* Adiciona algum espaçamento interno, se necessário */
-}
+        width: 100%;
+        margin: 0 auto;
+        justify-items: center;
+        /* padding-left: 70px; */
+    }
 
     .bicicleta-comprar {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
-   .header-menu .home {
-       display: none;
-   }
+
+    .header-menu .home {
+        display: none;
+    }
+
     .has-submenu {
         margin-bottom: 75px;
     }
