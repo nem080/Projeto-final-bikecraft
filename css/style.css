@@ -23,6 +23,9 @@
 @import "/css/bicicletas/bicicletas.css";
 @import "/css/bicicletas/ninbus.css";
 
+/* pagina orçamento */
+@import "/css/orcamento/orcamento.css";
+
 /* pagina de seguro */
 @import"/css/page-seguros/pageSeguros.css";
 @import"/css/page-seguros/duvidas.css";
