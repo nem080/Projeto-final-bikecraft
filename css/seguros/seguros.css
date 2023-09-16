@@ -161,7 +161,15 @@
         border-radius: 13px;
         max-width: 400px;
     }
+    .inform-conteudo h2{
+        grid-column: 1 / 5;
+        padding: 40px 0px 60px;
+        text-align: center;
+    }
 
+    .inform-conteudo h2::before {
+        display: none;
+    }
     .seguro-corpo h4 {
         font-size: 20px;
     }
@@ -219,8 +227,8 @@
 
 @media(max-width:375px) {
     .inform-conteudo h2 {
-        padding-top: 20px;
-        margin-bottom: -80px;
+        padding-top: 31px;
+        margin-bottom: -37px;
     }
 
     .seguro-corpo ul {

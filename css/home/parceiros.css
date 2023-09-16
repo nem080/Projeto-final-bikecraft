@@ -1,4 +1,6 @@
 
+.parceiros-bg{
+}
 .parceiro-conteudo{
     position: relative;
     padding-bottom: 60px;
@@ -50,7 +52,7 @@
     .parceiro-conteudo h2 {
         /* font-size: 2rem; */
         text-transform: capitalize;
-        padding: 80px 0px 60px 0px;
+        padding: 20px 0px 40px 0px;
         display: flex;
         align-items: center;
     }

@@ -1,6 +1,6 @@
 .bicicletas-lista {
     padding-top: 40px;
-    /* padding-bottom:0px; */
+    background: url(/img/dec/bottom-right-p.svg) no-repeat bottom 0px right 90px;
 }
 
 .bicicletas-lista h2 {
@@ -63,22 +63,25 @@
         transition: 0.2s;
     }
 }
-@media (max-width:800px){
-.bicicletas-lista {
+@media (max-width:800px) {
+    .bicicletas-lista {
         padding-top: 22px;
-        
-        
-    }
-.bicicletas-lista ul{
-    gap: 20px;
-}
-.bicicletas-lista a{
-    margin-bottom: 20px;
-}
+        padding-bottom: 0;
+        background: none;
 
-.bicicletas-lista a:hover {
-    transform:none;
-    cursor: pointer;
-    
-}
+    }
+
+    .bicicletas-lista ul {
+        gap: 20px;
+    }
+
+    .bicicletas-lista a {
+        margin-bottom: 20px;
+    }
+
+    .bicicletas-lista a:hover {
+        transform: none;
+        cursor: pointer;
+
+    }
 }

@@ -5,9 +5,6 @@
     margin-bottom: 60px;
 }
 /* incluindo detalhe na pagina */
-.introducao{
-    background: url(/img/dec/top-left-p.svg) no-repeat  10px bottom;
-}
 .introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
