@@ -44,8 +44,8 @@
 }
 
 .tecnologia-conteudo h2 {
-    padding-bottom: 80px;
-
+    padding-bottom: 60px;
+    line-height: 1.1;
 }
 
 .tecnologia p {
@@ -114,6 +114,7 @@
 
     .tecnologia h2 {
         padding-bottom: 20px;
+        
     }
 
     .tecnologia a {
