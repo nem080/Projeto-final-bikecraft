@@ -20,11 +20,12 @@
    background-color: var(--cor-2);
    padding: 15px 0 15px 20px;
 }
-.pergunta p{
+.pergunta button{
    display:grid;
    grid-template-columns: auto 1fr auto;
    align-items: center;
    gap: 8px;
+   border: none;
 }
 
 .pergunta p::before{
@@ -35,7 +36,8 @@
    background-color: var(--cor-p1);
 }
 
-.pergunta::after {
+.pergunta::after,
+.pergunta button [area-expanded="true"]::after {
    content:"";
    display: inline-block;
    width: 18px;
@@ -44,6 +46,7 @@
    background-image:url("/img/icones/seta-fechar.svg");
    background-repeat: no-repeat;
    transition: 0.5s;
+   
 }
 
 .pergunta:hover:after{
