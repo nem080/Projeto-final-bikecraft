@@ -28,29 +28,34 @@
    border: none;
 }
 
-.pergunta p::before{
+.pergunta button::before {
    content: "";
-   display:inline-block;
-   width:14px;
+   display: inline-block;
+   width: 14px;
    height: 6px;
    background-color: var(--cor-p1);
 }
 
-.pergunta::after,
-.pergunta button [area-expanded="true"]::after {
-   content:"";
+.pergunta::after {
+   content: "";
    display: inline-block;
    width: 18px;
    height: 6px;
    margin-right: 10px;
-   background-image:url("/img/icones/seta-fechar.svg");
+   background-image: url("/img/icones/seta-fechar.svg");
    background-repeat: no-repeat;
    transition: 0.5s;
-   
 }
 
-.pergunta:hover:after{
+.pergunta.aberta::after {
    transform: rotate(180deg);
+}
+.resposta {
+   display: none;
+}
+
+.resposta.aberta {
+   display: block;
 }
 
 
