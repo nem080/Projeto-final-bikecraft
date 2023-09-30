@@ -1,7 +1,9 @@
+/* reutilização */
 @import "/css/global/global.css";
 @import "/css/retilizacao/tipografia.css";
 @import "/css/retilizacao/cores.css";
 @import "/css/retilizacao/formulario.css";
+@import "/css/retilizacao/animacao.css";
 
 @import "/css/global/header.css";
 @import "/css/global/footer.css";

@@ -58,14 +58,14 @@
   <!-- secão introdução -->
   <main class="introducao-bg">
     <div class="conteiner introducao">
-      <div class="introducao-conteudo">
-        <h1 class="font-1_5-xl  cor-0">Bicicletas feitas sob medida</h1>
-        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você.
+      <div class="introducao-conteudo  bg-conteudo-index" >
+        <h1 class="font-1_5-xl  cor-0  fadeInDown" data-anime="200">Bicicletas feitas sob medida</h1>
+        <p class="font-2-l cor-5" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você.
           Explore
           o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="botao" href="./bicicletas.html">Escolha a sua</a>
+        <a class="botao  fadeInDown" data-anime="600" href="./bicicletas.html">Escolha a sua</a>
       </div>
-      <div>
+      <div class="fadeInDown"  data-anime="1500">
         <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta.">
       </div>
     </div>
@@ -178,8 +178,8 @@
       <div class="inform-conteudo">
         <h2 class="font-1_5-xl  cor-1">Seguros</h2>
         <div class="seguro-corpo">
-          <div class="prata">
-            <div class="preco-ouro-prata">
+          <div class="prata fadeInRight" data-anime="200">
+            <div class="preco-ouro-prata" >
               <h4 class="font-1-l cor-1">Prata</h4>
               <p class="valor-prata font-2-l cor-1">R$ 290</p>
               <span class="font-1-xs cor-6">mensal</span>
@@ -193,7 +193,7 @@
             <a class="btn-escuro" href="/contato.html">Increva-se</a>
           </div>
 
-          <div class="ouro cor-11" id="ouro">
+          <div class="ouro cor-11" id="ouro" data-anime="400">
             <div class="preco-ouro-prata">
               <h4 class="font-1-l cor-p1">Ouro</h4>
               <p class="valor-ouro valor-prata font-2-l cor-p1">R$ 320</p>
@@ -249,7 +249,8 @@
       <p class="direitos-reservado font-1-l">bikcraft alguns deireito reservado</p>
     </div>
   </footer>
-  
+
+  <script src="./javascript/plugins/simple-anime.js"></script>
   <script src="./javascript/script.js"></script>
 </body>
 
