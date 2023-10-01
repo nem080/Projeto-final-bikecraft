@@ -50,11 +50,11 @@
 .pergunta.aberta::after {
    transform: rotate(180deg);
 }
-.resposta {
+.javascript .resposta {
    display: none;
 }
 
-.resposta.aberta {
+.javascript .resposta.aberta {
    display: block;
 }
 

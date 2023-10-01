@@ -133,5 +133,4 @@ galeria.forEach(function (img) {
 // animação
 if (window.SimpleAnime) { // Corrigi a detecção da classe
     new SimpleAnime();
-    console.log(SimpleAnime);
 }
